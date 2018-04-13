@@ -1,1 +1,10 @@
 C:\Trabajos\WEB\ComicsRepositorio\Deal\obj\Debug\Bussines.csproj.CoreCompileInputs.cache
+C:\Trabajos\WEB\ComicsRepositorio\Deal\bin\Debug\Deal.dll
+C:\Trabajos\WEB\ComicsRepositorio\Deal\bin\Debug\Deal.pdb
+C:\Trabajos\WEB\ComicsRepositorio\Deal\bin\Debug\Contract.dll
+C:\Trabajos\WEB\ComicsRepositorio\Deal\bin\Debug\Models.dll
+C:\Trabajos\WEB\ComicsRepositorio\Deal\bin\Debug\Contract.pdb
+C:\Trabajos\WEB\ComicsRepositorio\Deal\bin\Debug\Models.pdb
+C:\Trabajos\WEB\ComicsRepositorio\Deal\obj\Debug\Bussines.csprojResolveAssemblyReference.cache
+C:\Trabajos\WEB\ComicsRepositorio\Deal\obj\Debug\Deal.dll
+C:\Trabajos\WEB\ComicsRepositorio\Deal\obj\Debug\Deal.pdb

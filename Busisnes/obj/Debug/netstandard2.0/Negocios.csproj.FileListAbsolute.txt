@@ -1,0 +1,11 @@
+C:\Users\Manue\source\repos\Comics\Negocios\obj\Debug\netstandard2.0\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\Manue\source\repos\Comics\Negocios\obj\Debug\netstandard2.0\Negocios.csproj.CoreCompileInputs.cache
+C:\Users\Manue\source\repos\Comics\Negocios\obj\Debug\netstandard2.0\Negocios.AssemblyInfoInputs.cache
+C:\Users\Manue\source\repos\Comics\Negocios\obj\Debug\netstandard2.0\Negocios.AssemblyInfo.cs
+C:\Users\Manue\source\repos\Comics\Negocios\bin\Debug\netstandard2.0\Negocios.deps.json
+C:\Users\Manue\source\repos\Comics\Negocios\bin\Debug\netstandard2.0\Negocios.dll
+C:\Users\Manue\source\repos\Comics\Negocios\bin\Debug\netstandard2.0\Negocios.pdb
+C:\Users\Manue\source\repos\Comics\Negocios\bin\Debug\netstandard2.0\Modelos.dll
+C:\Users\Manue\source\repos\Comics\Negocios\bin\Debug\netstandard2.0\Modelos.pdb
+C:\Users\Manue\source\repos\Comics\Negocios\obj\Debug\netstandard2.0\Negocios.dll
+C:\Users\Manue\source\repos\Comics\Negocios\obj\Debug\netstandard2.0\Negocios.pdb

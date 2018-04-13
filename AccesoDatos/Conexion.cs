@@ -14,7 +14,7 @@ namespace AccesoDatos
 
         public Conexion()
         {
-            _cadenaConexion = ConfigurationManager.ConnectionStrings["ConnectionDB"].ToString();
+            _cadenaConexion = ConfigurationManager.ConnectionStrings["ComicDBContext"].ToString();
 
         }
 

@@ -26,9 +26,23 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Modelos/1.0.0": {
+      "Contratos/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "C:\\Users\\Manue\\source\\repos\\Comics\\ComicsRepositorio\\ClassLibrary2\\Modelos.csproj": "1.0.0",
+          "C:\\Users\\Manue\\source\\repos\\Comics\\ComicsRepositorio\\Negocios\\Negocios.csproj": "1.0.0",
+          "Modelos": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Contratos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contratos.dll": {}
+        }
+      },
+      "Modelos/1.0.0": {
+        "type": "project",
         "compile": {
           "bin/placeholder/Modelos.dll": {}
         },
@@ -180,15 +194,20 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Contratos/1.0.0": {
+      "type": "project",
+      "path": "../Contrats/Contratos.csproj",
+      "msbuildProject": "../Contrats/Contratos.csproj"
+    },
     "Modelos/1.0.0": {
       "type": "project",
-      "path": "../ClassLibrary2/Modelos.csproj",
-      "msbuildProject": "../ClassLibrary2/Modelos.csproj"
+      "path": "../Models/Modelos.csproj",
+      "msbuildProject": "../Models/Modelos.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Modelos >= 1.0.0",
+      "Contratos >= 1.0.0",
       "NETStandard.Library >= 2.0.0"
     ]
   },
@@ -203,11 +222,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Manue\\source\\repos\\Comics\\Negocios\\Negocios.csproj",
+      "projectUniqueName": "C:\\Users\\Manue\\source\\repos\\Comics\\ComicsRepositorio\\Busisnes\\Negocios.csproj",
       "projectName": "Negocios",
-      "projectPath": "C:\\Users\\Manue\\source\\repos\\Comics\\Negocios\\Negocios.csproj",
+      "projectPath": "C:\\Users\\Manue\\source\\repos\\Comics\\ComicsRepositorio\\Busisnes\\Negocios.csproj",
       "packagesPath": "C:\\Users\\Manue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Manue\\source\\repos\\Comics\\Negocios\\obj\\",
+      "outputPath": "C:\\Users\\Manue\\source\\repos\\Comics\\ComicsRepositorio\\Busisnes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -228,8 +247,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Manue\\source\\repos\\Comics\\ClassLibrary2\\Modelos.csproj": {
-              "projectPath": "C:\\Users\\Manue\\source\\repos\\Comics\\ClassLibrary2\\Modelos.csproj"
+            "C:\\Users\\Manue\\source\\repos\\Comics\\ComicsRepositorio\\Contrats\\Contratos.csproj": {
+              "projectPath": "C:\\Users\\Manue\\source\\repos\\Comics\\ComicsRepositorio\\Contrats\\Contratos.csproj"
             }
           }
         }
@@ -257,5 +276,25 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "No se encuentra la información del proyecto de \"C:\\Users\\Manue\\source\\repos\\Comics\\ComicsRepositorio\\Negocios\\Negocios.csproj\". Puede que el archivo de proyecto no sea válido o que falten los destinos necesarios para la restauración.",
+      "libraryId": "C:\\Users\\Manue\\source\\repos\\Comics\\ComicsRepositorio\\Negocios\\Negocios.csproj",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"C:\\Users\\Manue\\source\\repos\\Comics\\ComicsRepositorio\\ClassLibrary2\\Modelos.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "libraryId": "C:\\Users\\Manue\\source\\repos\\Comics\\ComicsRepositorio\\ClassLibrary2\\Modelos.csproj",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

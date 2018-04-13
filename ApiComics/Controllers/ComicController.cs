@@ -10,26 +10,25 @@ using Comics.Modelos.Catalogos;
 
 namespace ApiComics.Controllers
 {
-    [RoutePrefix("api/v1/companias")]
-    public class CompaniaController : ApiController
+    public class ComicController : ApiController
     {
-        private ICompaniaNegocio _companiaNegocio;
+        private IComicNegocio _comicNegocio;
 
-        public CompaniaController(ICompaniaNegocio companiaNegocio)
+        public ComicController(IComicNegocio comicNegocio)
         {
-            this._companiaNegocio = companiaNegocio;
+            this._comicNegocio = comicNegocio;
         }
 
         [HttpGet]
-        [Route("", Name = "ObtenerCompanias")]
-        public IHttpActionResult ObtenerCompanias(int skip, int take)
+        [Route("", Name = "ObtenerComics")]
+        public IHttpActionResult ObtenerComics(int skip, int take)
         {
             try
             {
-                var companias = this._companiaNegocio.ObtenerCompanias(skip, take);
-                if (companias.totalCompanias > 0)
+                var comics = this._comicNegocio.ObtenerComics(skip, take);
+                if (comics.totalComics > 0)
                 {
-                    return this.Ok(companias);
+                    return this.Ok(comics);
                 }
                 else
                 {
@@ -47,15 +46,15 @@ namespace ApiComics.Controllers
         }
 
         [HttpGet]
-        [Route("{companiaId}", Name = "ObtenerCompaniaPorId")]
-        public IHttpActionResult ObtenerCompaniaPorId(int companiaId)
+        [Route("{comicId}", Name = "ObtenerComicPorId")]
+        public IHttpActionResult ObtenerComicPorId(int comicId)
         {
             try
             {
-                var compania = this._companiaNegocio.ObtenerCompaniaPorId(companiaId);
-                if (compania.id > 0)
+                var comic = this._comicNegocio.ObtenerComicPorId(comicId);
+                if (comic.id > 0)
                 {
-                    return this.Ok(compania);
+                    return this.Ok(comic);
                 }
                 else
                 {
@@ -73,13 +72,13 @@ namespace ApiComics.Controllers
         }
 
         [HttpPost]
-        [Route("", Name = "CrearCompania")]
-        public IHttpActionResult CrearCompania([FromBody] Compania compania)
+        [Route("", Name = "CrearComic")]
+        public IHttpActionResult CrearComic([FromBody] Comic comic)
         {
             try
             {
-                var companiaId = this._companiaNegocio.CrearCompania(compania);
-                return this.Ok(companiaId);
+                var comicId = this._comicNegocio.CrearComic(comic);
+                return this.Ok(comicId);
             }
             catch (HttpRequestException)
             {
@@ -92,13 +91,13 @@ namespace ApiComics.Controllers
         }
 
         [HttpPut]
-        [Route("{companiaId}", Name = "ActualizarCompania")]
-        public IHttpActionResult ActualizarCompania([FromBody] Compania compania, int companiaId)
+        [Route("{comicId}", Name = "ActualizarComic")]
+        public IHttpActionResult ActualizarComic([FromBody] Comic comic, int comicId)
         {
             try
             {
-                var companiaIdActualizado = this._companiaNegocio.ActualizarCompania(compania);
-                return this.Ok(companiaIdActualizado);
+                var comicIdActualizado = this._comicNegocio.ActualizarComic(comic);
+                return this.Ok(comicIdActualizado);
             }
             catch (HttpRequestException)
             {
@@ -111,12 +110,12 @@ namespace ApiComics.Controllers
         }
 
         [HttpDelete]
-        [Route("{companiaId}", Name = "EliminarCompania")]
-        public IHttpActionResult EliminarCompania(int companiaId)
+        [Route("{comicId}", Name = "EliminarComic")]
+        public IHttpActionResult EliminarComic(int comicId)
         {
             try
             {
-                this._companiaNegocio.EliminarCompania(companiaId);
+                this._comicNegocio.EliminarComic(comicId);
                 return new StatusCodeResult(HttpStatusCode.NoContent, this);
             }
             catch (HttpRequestException)

@@ -5,9 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ApiComics\ApiComics.csproj" />
     <ProjectReference Include="..\ClassLibrary2\Modelos.csproj" />
-    <ProjectReference Include="..\Comics\Comics.csproj" />
+    <ProjectReference Include="..\Models\Modelos.csproj" />
     <ProjectReference Include="..\Negocios\Negocios.csproj" />
   </ItemGroup>
 

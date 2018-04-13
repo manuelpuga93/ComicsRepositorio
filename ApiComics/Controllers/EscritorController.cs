@@ -10,26 +10,26 @@ using Comics.Modelos.Catalogos;
 
 namespace ApiComics.Controllers
 {
-    [RoutePrefix("api/v1/companias")]
-    public class CompaniaController : ApiController
+    [RoutePrefix("api/v1/escritores")]
+    public class EscritorController : ApiController
     {
-        private ICompaniaNegocio _companiaNegocio;
+        private IEscritorNegocio _escritorNegocio;
 
-        public CompaniaController(ICompaniaNegocio companiaNegocio)
+        public EscritorController(IEscritorNegocio escritorNegocio)
         {
-            this._companiaNegocio = companiaNegocio;
+            this._escritorNegocio = escritorNegocio;
         }
 
         [HttpGet]
-        [Route("", Name = "ObtenerCompanias")]
-        public IHttpActionResult ObtenerCompanias(int skip, int take)
+        [Route("", Name = "ObtenerEscritores")]
+        public IHttpActionResult ObtenerEscritores(int skip, int take)
         {
             try
             {
-                var companias = this._companiaNegocio.ObtenerCompanias(skip, take);
-                if (companias.totalCompanias > 0)
+                var escritores = this._escritorNegocio.ObtenerEscritores(skip, take);
+                if (escritores.totalEscritores > 0)
                 {
-                    return this.Ok(companias);
+                    return this.Ok(escritores);
                 }
                 else
                 {
@@ -47,15 +47,15 @@ namespace ApiComics.Controllers
         }
 
         [HttpGet]
-        [Route("{companiaId}", Name = "ObtenerCompaniaPorId")]
-        public IHttpActionResult ObtenerCompaniaPorId(int companiaId)
+        [Route("{escritorId}", Name = "ObtenerEscritorPorId")]
+        public IHttpActionResult ObtenerEscritorPorId(int escritorId)
         {
             try
             {
-                var compania = this._companiaNegocio.ObtenerCompaniaPorId(companiaId);
-                if (compania.id > 0)
+                var escritor = this._escritorNegocio.ObtenerEscritorPorId(escritorId);
+                if (escritor.id > 0)
                 {
-                    return this.Ok(compania);
+                    return this.Ok(escritor);
                 }
                 else
                 {
@@ -73,13 +73,13 @@ namespace ApiComics.Controllers
         }
 
         [HttpPost]
-        [Route("", Name = "CrearCompania")]
-        public IHttpActionResult CrearCompania([FromBody] Compania compania)
+        [Route("", Name = "CrearEscritor")]
+        public IHttpActionResult CrearEscritor([FromBody] Escritor escritor)
         {
             try
             {
-                var companiaId = this._companiaNegocio.CrearCompania(compania);
-                return this.Ok(companiaId);
+                var escritorId = this._escritorNegocio.CrearEscritor(escritor);
+                return this.Ok(escritorId);
             }
             catch (HttpRequestException)
             {
@@ -92,13 +92,13 @@ namespace ApiComics.Controllers
         }
 
         [HttpPut]
-        [Route("{companiaId}", Name = "ActualizarCompania")]
-        public IHttpActionResult ActualizarCompania([FromBody] Compania compania, int companiaId)
+        [Route("{escritorId}", Name = "ActualizarEscritor")]
+        public IHttpActionResult ActualizarEscritor([FromBody] Escritor escritor, int escritorId)
         {
             try
             {
-                var companiaIdActualizado = this._companiaNegocio.ActualizarCompania(compania);
-                return this.Ok(companiaIdActualizado);
+                var escritorIdActualizado = this._escritorNegocio.ActualizarEscritor(escritor);
+                return this.Ok(escritorIdActualizado);
             }
             catch (HttpRequestException)
             {
@@ -111,12 +111,12 @@ namespace ApiComics.Controllers
         }
 
         [HttpDelete]
-        [Route("{companiaId}", Name = "EliminarCompania")]
-        public IHttpActionResult EliminarCompania(int companiaId)
+        [Route("{escritorId}", Name = "EliminarEscritor")]
+        public IHttpActionResult EliminarEscritor(int escritorId)
         {
             try
             {
-                this._companiaNegocio.EliminarCompania(companiaId);
+                this._escritorNegocio.EliminarEscritor(escritorId);
                 return new StatusCodeResult(HttpStatusCode.NoContent, this);
             }
             catch (HttpRequestException)

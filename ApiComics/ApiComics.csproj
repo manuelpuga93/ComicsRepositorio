@@ -201,7 +201,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\ComicController.cs" />
     <Compile Include="Controllers\CompaniaController.cs" />
+    <Compile Include="Controllers\EscritorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -275,6 +277,16 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contrats\Contratos.csproj">
+      <Project>{e8aa474b-3894-4c9e-96a4-582ede15086f}</Project>
+      <Name>Contratos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Modelos.csproj">
+      <Project>{255d1d2d-1935-43ef-96ea-66bb2fe12495}</Project>
+      <Name>Modelos</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

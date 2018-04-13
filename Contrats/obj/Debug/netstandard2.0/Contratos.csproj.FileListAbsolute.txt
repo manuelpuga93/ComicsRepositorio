@@ -1,4 +1,0 @@
-C:\Users\Manue\source\repos\Comics\Contratos\obj\Debug\netstandard2.0\Contratos.csprojResolveAssemblyReference.cache
-C:\Users\Manue\source\repos\Comics\Contratos\obj\Debug\netstandard2.0\Contratos.csproj.CoreCompileInputs.cache
-C:\Users\Manue\source\repos\Comics\Contratos\obj\Debug\netstandard2.0\Contratos.AssemblyInfoInputs.cache
-C:\Users\Manue\source\repos\Comics\Contratos\obj\Debug\netstandard2.0\Contratos.AssemblyInfo.cs

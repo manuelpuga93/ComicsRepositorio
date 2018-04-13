@@ -72,3 +72,7 @@ C:\Users\Manue\source\repos\Comics\ApiComics\obj\Debug\ApiComics.csprojResolveAs
 C:\Users\Manue\source\repos\Comics\ApiComics\obj\Debug\ApiComics.csproj.CoreCompileInputs.cache
 C:\Users\Manue\source\repos\Comics\ApiComics\obj\Debug\ApiComics.dll
 C:\Users\Manue\source\repos\Comics\ApiComics\obj\Debug\ApiComics.pdb
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\obj\Debug\ApiComics.csprojResolveAssemblyReference.cache
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\obj\Debug\ApiComics.csproj.CoreCompileInputs.cache
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\obj\Debug\ApiComics.dll
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\obj\Debug\ApiComics.pdb

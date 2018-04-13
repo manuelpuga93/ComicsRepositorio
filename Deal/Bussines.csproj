@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2EF2CA8A-C042-4A17-9545-D4747BCEA805}</ProjectGuid>
+    <ProjectGuid>{C4A6E42E-FC0B-4041-8647-5EF104C22904}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AccesoDatos</RootNamespace>
-    <AssemblyName>AccesoDatos</AssemblyName>
+    <RootNamespace>Deal</RootNamespace>
+    <AssemblyName>Deal</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,7 +31,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,11 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Catalogos\Articulo.cs" />
-    <Compile Include="Conexion.cs" />
+    <Compile Include="ComicNegocio.cs" />
+    <Compile Include="CompaniaNegocio.cs" />
+    <Compile Include="EscritorNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Contract\Contract.csproj">
+      <Project>{8857efb8-f60e-45a3-9a53-6504ee4d3cc2}</Project>
+      <Name>Contract</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Models\Modelos.csproj">
       <Project>{255d1d2d-1935-43ef-96ea-66bb2fe12495}</Project>
       <Name>Modelos</Name>

@@ -1,0 +1,2 @@
+C:\Trabajos\WEB\ComicsRepositorio\Contract\obj\Debug\Contract.csprojResolveAssemblyReference.cache
+C:\Trabajos\WEB\ComicsRepositorio\Contract\obj\Debug\Contract.csproj.CoreCompileInputs.cache

@@ -1,0 +1,6 @@
+C:\Trabajos\WEB\ComicsRepositorio\Models\bin\Debug\Models.dll
+C:\Trabajos\WEB\ComicsRepositorio\Models\bin\Debug\Models.pdb
+C:\Trabajos\WEB\ComicsRepositorio\Models\obj\Debug\Modelos.csprojResolveAssemblyReference.cache
+C:\Trabajos\WEB\ComicsRepositorio\Models\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Trabajos\WEB\ComicsRepositorio\Models\obj\Debug\Models.dll
+C:\Trabajos\WEB\ComicsRepositorio\Models\obj\Debug\Models.pdb

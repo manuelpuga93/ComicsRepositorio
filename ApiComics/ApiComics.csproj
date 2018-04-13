@@ -279,9 +279,13 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Contrats\Contratos.csproj">
-      <Project>{e8aa474b-3894-4c9e-96a4-582ede15086f}</Project>
-      <Name>Contratos</Name>
+    <ProjectReference Include="..\Contract\Contract.csproj">
+      <Project>{8857efb8-f60e-45a3-9a53-6504ee4d3cc2}</Project>
+      <Name>Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Deal\Bussines.csproj">
+      <Project>{c4a6e42e-fc0b-4041-8647-5ef104c22904}</Project>
+      <Name>Bussines</Name>
     </ProjectReference>
     <ProjectReference Include="..\Models\Modelos.csproj">
       <Project>{255d1d2d-1935-43ef-96ea-66bb2fe12495}</Project>

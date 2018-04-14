@@ -146,6 +146,18 @@ C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\es\System.Web.WebPages.resources
 C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\es\System.Web.WebPages.Razor.resources.dll
 <<<<<<< Updated upstream
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\Microsoft.Practices.Unity.dll
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\Microsoft.Practices.Unity.xml
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\System.Web.Cors.dll
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\System.Web.Http.Cors.dll
+C:\Trabajos\WEB\ComicsRepositorio\ApiComics\bin\System.Web.Http.Cors.xml
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\ApiComics\bin\ApplicationInsights.config
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\ApiComics\bin\ApiComics.dll.config
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\ApiComics\bin\ApiComics.dll

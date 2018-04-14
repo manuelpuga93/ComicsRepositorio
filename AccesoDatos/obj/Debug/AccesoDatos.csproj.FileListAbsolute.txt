@@ -14,5 +14,3 @@ C:\Users\Manue\source\repos\Comics\ComicsRepositorio\AccesoDatos\obj\Debug\Acces
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\AccesoDatos\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\AccesoDatos\obj\Debug\AccesoDatos.dll
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\AccesoDatos\obj\Debug\AccesoDatos.pdb
-C:\Users\Manue\source\repos\Comics\ComicsRepositorio\AccesoDatos\bin\Debug\Contract.dll
-C:\Users\Manue\source\repos\Comics\ComicsRepositorio\AccesoDatos\bin\Debug\Contract.pdb

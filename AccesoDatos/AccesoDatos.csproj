@@ -41,11 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Catalogos\Articulo.cs" />
+    <Compile Include="Catalogos\Comic.cs" />
+    <Compile Include="Catalogos\Compania.cs" />
+    <Compile Include="Catalogos\Escritor.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Contract\Contract.csproj">
+      <Project>{8857efb8-f60e-45a3-9a53-6504ee4d3cc2}</Project>
+      <Name>Contract</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Models\Modelos.csproj">
       <Project>{255d1d2d-1935-43ef-96ea-66bb2fe12495}</Project>
       <Name>Modelos</Name>

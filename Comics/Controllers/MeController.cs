@@ -14,7 +14,6 @@ using Comics.Models;
 
 namespace Comics.Controllers
 {
-    [Authorize]
     public class MeController : ApiController
     {
         private ApplicationUserManager _userManager;

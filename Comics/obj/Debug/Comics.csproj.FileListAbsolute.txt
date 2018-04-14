@@ -169,6 +169,11 @@ C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Antlr3.Runtime.pdb
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\CommonServiceLocator.pdb
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\EntityFramework.xml
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\EntityFramework.SqlServer.xml
+C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.AI.DependencyCollector.xml
+C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.AI.Web.xml
+C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.AI.WindowsServer.xml
+C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.ApplicationInsights.xml
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.AspNet.Identity.Owin.xml
@@ -201,11 +206,6 @@ C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Unity.Interception.pdb
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Unity.Interception.Configuration.pdb
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Unity.RegistrationByConvention.pdb
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Unity.ServiceLocation.pdb
-C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.ApplicationInsights.xml
-C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.AI.DependencyCollector.xml
-C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.AI.WindowsServer.xml
-C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\Microsoft.AI.Web.xml
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\es\EntityFramework.resources.dll
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\es\EntityFramework.SqlServer.resources.dll
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
@@ -228,7 +228,6 @@ C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\es\System.Web.Razor.resources.dll
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\es\System.Web.WebPages.resources.dll
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Trabajos\WEB\ComicsRepositorio\Comics\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Trabajos\WEB\ComicsRepositorio\Comics\obj\Debug\Comics.csprojResolveAssemblyReference.cache
 C:\Trabajos\WEB\ComicsRepositorio\Comics\obj\Debug\Comics.csproj.CoreCompileInputs.cache
 C:\Trabajos\WEB\ComicsRepositorio\Comics\obj\Debug\Comics.dll
 C:\Trabajos\WEB\ComicsRepositorio\Comics\obj\Debug\Comics.pdb
@@ -349,3 +348,4 @@ C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Comics\obj\Debug\Comics.csp
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Comics\obj\Debug\Comics.csproj.CoreCompileInputs.cache
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Comics\obj\Debug\Comics.dll
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Comics\obj\Debug\Comics.pdb
+C:\Trabajos\WEB\ComicsRepositorio\Comics\obj\Debug\Comics.csprojResolveAssemblyReference.cache

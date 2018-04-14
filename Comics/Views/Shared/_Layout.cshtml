@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
-<html lang="es">
+<html ng-app="ComicsApp">
 <head>
+
+    <base href="/">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <title>@ViewBag.Title: mi aplicación ASP.NET</title>
@@ -31,7 +33,7 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        @RenderSection("SPAViews", required: false)
+       @* @RenderSection("SPAViews", required: false)*@
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
@@ -41,5 +43,14 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("Scripts", required: false)
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/managment/module.js"></script>
+    <script src="~/Scripts/managment/shared/alerts/alertGlobal.js"></script>
+    @* comics *@
+    <script src="~/Scripts/managment/components/comic/comicController.js"></script>
+    <script src="~/Scripts/managment/components/comic/comicCreateController.js"></script>
+    <script src="~/Scripts/managment/components/comic/comicEditController.js"></script>
+    <script src="~/Scripts/managment/components/comic/comicService.js"></script>
 </body>
 </html>

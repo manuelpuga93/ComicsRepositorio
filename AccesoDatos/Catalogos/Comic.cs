@@ -8,7 +8,7 @@ using Comics.Contratos.Repositorios;
 
 namespace AccesoDatos.Catalogos
 {
-    class Comic : Conexion, IComicRepositorio
+    public class Comic : Conexion, IComicRepositorio
     {
         public bool ActualizarComic(Comics.Modelos.Catalogos.Comic comic)
         {

@@ -14,3 +14,12 @@ C:\Users\Manue\source\repos\Comics\ComicsRepositorio\AccesoDatos\obj\Debug\Acces
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\AccesoDatos\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\AccesoDatos\obj\Debug\AccesoDatos.dll
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\AccesoDatos\obj\Debug\AccesoDatos.pdb
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\AccesoDatos\bin\Debug\AccesoDatos.dll
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\AccesoDatos\bin\Debug\AccesoDatos.pdb
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\AccesoDatos\bin\Debug\Contract.dll
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\AccesoDatos\bin\Debug\Models.dll
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\AccesoDatos\bin\Debug\Contract.pdb
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\AccesoDatos\bin\Debug\Models.pdb
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\AccesoDatos\obj\Debug\AccesoDatos.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\AccesoDatos\obj\Debug\AccesoDatos.dll
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\AccesoDatos\obj\Debug\AccesoDatos.pdb

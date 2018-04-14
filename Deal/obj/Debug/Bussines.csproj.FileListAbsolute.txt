@@ -18,3 +18,12 @@ C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Deal\obj\Debug\Bussines.csp
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Deal\obj\Debug\Bussines.csproj.CoreCompileInputs.cache
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Deal\obj\Debug\Deal.dll
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Deal\obj\Debug\Deal.pdb
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Deal\bin\Debug\Deal.dll
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Deal\bin\Debug\Deal.pdb
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Deal\bin\Debug\Contract.dll
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Deal\bin\Debug\Models.dll
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Deal\bin\Debug\Contract.pdb
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Deal\bin\Debug\Models.pdb
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Deal\obj\Debug\Bussines.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Deal\obj\Debug\Deal.dll
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Deal\obj\Debug\Deal.pdb

@@ -255,6 +255,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
+      <Project>{2ef2ca8a-c042-4a17-9545-d4747bcea805}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Contract\Contract.csproj">
       <Project>{8857efb8-f60e-45a3-9a53-6504ee4d3cc2}</Project>
       <Name>Contract</Name>

@@ -14,3 +14,9 @@ C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Contract\obj\Debug\Contract
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Contract\obj\Debug\Contract.csproj.CoreCompileInputs.cache
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Contract\obj\Debug\Contract.dll
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Contract\obj\Debug\Contract.pdb
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Contract\bin\Debug\Contract.dll
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Contract\bin\Debug\Contract.pdb
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Contract\bin\Debug\Models.dll
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Contract\bin\Debug\Models.pdb
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Contract\obj\Debug\Contract.dll
+\\Mac\Home\Documents\Visual Studio 2017\Projects\Nueva carpeta\Contract\obj\Debug\Contract.pdb

@@ -1,9 +1,9 @@
-C:\Trabajos\WEB\ComicsRepositorio\Contract\obj\Debug\Contract.csprojResolveAssemblyReference.cache
-C:\Trabajos\WEB\ComicsRepositorio\Contract\obj\Debug\Contract.csproj.CoreCompileInputs.cache
 C:\Trabajos\WEB\ComicsRepositorio\Contract\bin\Debug\Contract.dll
 C:\Trabajos\WEB\ComicsRepositorio\Contract\bin\Debug\Contract.pdb
 C:\Trabajos\WEB\ComicsRepositorio\Contract\bin\Debug\Models.dll
 C:\Trabajos\WEB\ComicsRepositorio\Contract\bin\Debug\Models.pdb
+C:\Trabajos\WEB\ComicsRepositorio\Contract\obj\Debug\Contract.csprojResolveAssemblyReference.cache
+C:\Trabajos\WEB\ComicsRepositorio\Contract\obj\Debug\Contract.csproj.CoreCompileInputs.cache
 C:\Trabajos\WEB\ComicsRepositorio\Contract\obj\Debug\Contract.dll
 C:\Trabajos\WEB\ComicsRepositorio\Contract\obj\Debug\Contract.pdb
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Contract\bin\Debug\Contract.dll

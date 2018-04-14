@@ -10,7 +10,6 @@ using Comics.Models;
 
 namespace Comics.Controllers
 {
-    [Authorize]
     public class ManageController : Controller
     {
         private ApplicationSignInManager _signInManager;

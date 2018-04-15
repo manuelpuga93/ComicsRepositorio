@@ -111,7 +111,7 @@ namespace ApiComics.Controllers
         }
 
         [HttpDelete]
-        [Route("{companiaId}", Name = "EliminarCompania")]
+        [Route("eliminar/{companiaId}", Name = "EliminarCompania")]
         public IHttpActionResult EliminarCompania(int companiaId)
         {
             try

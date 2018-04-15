@@ -26,27 +26,12 @@
             return $http.delete(API_CONFIG.url + '/comic/' + comicId);
         };
 
-
-        var _consultarCodigoComic = function () {
-            return $http.get(API_CONFIG.url + '/comic/codigo').then(function (response) {
-                return response.data;
-            });
-        };
-
-        var _consultarTodosCodigosComic = function () {
-            return $http.get(API_CONFIG.url + '/comic/codes').then(function (response) {
-                return response.data;
-            });
-        };
-
         return {
             ConsultarComics: _consultarComics,
             ConsultarComicPorId: _consultarComicPorId,
             CrearComic: _crearComic,
             ActualizarComic: _actualizarComic,
-            EliminarComic: _eliminarComic,
-            ConsultarCodigoComic: _consultarCodigoComic,
-            ConsultarTodosCodigosComic: _consultarTodosCodigosComic
+            EliminarComic: _eliminarComic
         };
     }
 

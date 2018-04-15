@@ -1,7 +1,7 @@
 ﻿(function () {
     var app = angular.module("ComicsApp");
 
-    var ComicsController = function ($scope, ComicService, $location, $injector) {
+    var ComicsController = function ($scope, ComicService, $location, $injector, ShareData) {
         var init = function () {
             $scope.pagination = {
                 totalItems: 0,
@@ -18,6 +18,13 @@
                 $scope.pagination.totalItems = data.totalComics
             }, mostrarError);
         };
+
+        //To Edit Student Information  
+        $scope.EditComic = function (comicId) {
+            ShareData.value = comicId;
+            $location.path("/editcomic");
+        }  
+
 
         $scope.EliminarUnidad = function (comicId) {
             ComicService.EliminarUnidad(comicId).then(function (reason) {
@@ -53,6 +60,7 @@
         "ComicService",
         "$location",
         "$injector",
+        "ShareData",
         ComicsController
     ]);
 }());

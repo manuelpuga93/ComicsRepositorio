@@ -5,32 +5,33 @@
 
 <h2>Comics</h2>
 
-<table><tr><td height="10px"></td></tr></table>
-<table cellpadding="4" cellspacing="4" width="90%" align="center"
-       style="background-color: skyblue; border:solid 2px red; padding-top:20px;">
-    <thead>
-        <tr style="background-color:#F5F5F5;">
-            <th>ID</th>
-            <th>Titulo</th>
-            <th>Año</th>
-            <th>Numero</th>
-            <th>Escritor</th>
-            <th>Compania</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr data-ng-repeat="comic in comicsInfo">
-            <td>{{comic.id}}</td>
-            <td>{{comic.titulo}}</td>
-            <td>{{comic.anio}}</td>
-            <td>{{comic.numero}}</td>
-            <td>{{comic.escritor}}</td>
-            <td>{{comic.compania}}</td>
-            <td><a ng-click="EditComic(comic.id)">Edit</a></td>
-            <td><a ng-click="EliminarUnidad(comic.id)">Delete</a></td>
-        </tr>
-    </tbody>
-</table>  
-
+<div ng-controller="ComicsController">
+    <table cellpadding="4" cellspacing="4" width="90%" align="center"
+           style="background-color: skyblue; border:solid 2px red; padding-top:20px;">
+        <thead>
+            <tr style="background-color:#F5F5F5;">
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Año</th>
+                <th>Numero</th>
+                <th>Escritor</th>
+                <th>Compania</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="comic in comicsInfo">
+                <td>{{comic.id}}</td>
+                <td>{{comic.titulo}}</td>
+                <td>{{comic.anio}}</td>
+                <td>{{comic.numero}}</td>
+                <td>{{comic.escritor}}</td>
+                <td>{{comic.compania}}</td>
+                <td><a ng-click="EditComic(comic.id)">Edit</a></td>
+                <td><a ng-click="EliminarUnidad(comic.id)">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <div data-ng-include="'/Scripts/managment/shared/pagination/pagination.html'"></div>
+</div>

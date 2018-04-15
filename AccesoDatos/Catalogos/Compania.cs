@@ -20,7 +20,7 @@ namespace AccesoDatos.Catalogos
             OFFSET @skip ROWS
             FETCH NEXT @take ROWS ONLY";
         private string queryCantidadcompanias = "SELECT COUNT(*) FROM compania";
-        private string queryDeleteArticulo = "DELETE FROM compania WHERE id = @id";
+        private string queryDeleteCompania = "DELETE FROM compania WHERE id = @id";
 
         #endregion
 
@@ -89,7 +89,7 @@ namespace AccesoDatos.Catalogos
             {
                 using (SqlConnection con = _Connection())
                 {
-                    var query = new SqlCommand(queryDeleteArticulo, con);
+                    var query = new SqlCommand(queryDeleteCompania, con);
                     query.Parameters.AddWithValue("@id", companiaId);
                     query.ExecuteNonQuery();
 

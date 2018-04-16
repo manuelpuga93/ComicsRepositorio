@@ -43,6 +43,7 @@
     <Compile Include="Catalogos\Comic\Comic.cs" />
     <Compile Include="Catalogos\Compania\Compania.cs" />
     <Compile Include="Catalogos\Escritor\Escritor.cs" />
+    <Compile Include="ComicViewModel.cs" />
     <Compile Include="Dtos\DtoComic.cs" />
     <Compile Include="Dtos\DtoCompania.cs" />
     <Compile Include="Dtos\DtoEscritor.cs" />

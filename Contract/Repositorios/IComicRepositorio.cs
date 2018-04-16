@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 using Comics.Modelos.Catalogos;
+using Models;
 
 namespace Comics.Contratos.Repositorios
 {
     public interface IComicRepositorio
     {
-        List<Comic> List(int skip, int take);
+        List<ComicViewModel> List(int skip, int take);
         int ObtenerCantidadComics();
         int ObtenerUltimoComic();
         Comic ObtenerComic(int comicId);

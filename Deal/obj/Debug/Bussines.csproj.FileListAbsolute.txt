@@ -18,3 +18,13 @@ C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Deal\obj\Debug\Bussines.csp
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Deal\obj\Debug\Bussines.csproj.CoreCompileInputs.cache
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Deal\obj\Debug\Deal.dll
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Deal\obj\Debug\Deal.pdb
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Deal\bin\Debug\Deal.dll
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Deal\bin\Debug\Deal.pdb
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Deal\bin\Debug\Contract.dll
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Deal\bin\Debug\Models.dll
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Deal\bin\Debug\Contract.pdb
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Deal\bin\Debug\Models.pdb
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Deal\obj\Debug\Bussines.csprojResolveAssemblyReference.cache
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Deal\obj\Debug\Bussines.csproj.CoreCompileInputs.cache
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Deal\obj\Debug\Deal.dll
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Deal\obj\Debug\Deal.pdb

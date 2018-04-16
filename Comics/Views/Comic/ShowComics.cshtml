@@ -21,15 +21,15 @@
             </tr>
         </thead>
         <tbody>
-            <tr data-ng-repeat="comic in comicsInfo">
-                <td>{{comic.id}}</td>
-                <td>{{comic.titulo}}</td>
-                <td>{{comic.anio}}</td>
-                <td>{{comic.numero}}</td>
-                <td>{{comic.escritor}}</td>
-                <td>{{comic.compania}}</td>
-                <td><a ng-click="EditComic(comic.id)">Edit</a></td>
-                <td><a ng-click="EliminarUnidad(comic.id)">Delete</a></td>
+            <tr data-ng-repeat="comicVM in comicsInfo">
+                <td>{{comicVM.comic.id}}</td>
+                <td>{{comicVM.comic.titulo}}</td>
+                <td>{{comicVM.comic.anio}}</td>
+                <td>{{comicVM.comic.numero}}</td>
+                <td>{{comicVM.escritorNombre}}</td>
+                <td>{{comicVM.companiaNombre}}</td>
+                <td><a ng-click="EditComic(comicVM.comic.id)">Edit</a></td>
+                <td><a ng-click="EliminarUnidad(comicVM.comic.id)">Delete</a></td>
             </tr>
         </tbody>
     </table>

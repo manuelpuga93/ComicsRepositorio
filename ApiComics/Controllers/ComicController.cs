@@ -10,7 +10,7 @@ using Comics.Modelos.Catalogos;
 
 namespace ApiComics.Controllers
 {
-    [RoutePrefix("api/v1/comic")]
+    [RoutePrefix("api/v1/comics")]
     public class ComicController : ApiController
     {
         private IComicNegocio _comicNegocio;

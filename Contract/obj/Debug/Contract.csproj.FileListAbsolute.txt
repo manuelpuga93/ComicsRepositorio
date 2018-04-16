@@ -13,3 +13,11 @@ C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Contract\bin\Debug\Models.p
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Contract\obj\Debug\Contract.csproj.CoreCompileInputs.cache
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Contract\obj\Debug\Contract.dll
 C:\Users\Manue\source\repos\Comics\ComicsRepositorio\Contract\obj\Debug\Contract.pdb
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Contract\bin\Debug\Contract.dll
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Contract\bin\Debug\Contract.pdb
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Contract\bin\Debug\Models.dll
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Contract\bin\Debug\Models.pdb
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Contract\obj\Debug\Contract.csprojResolveAssemblyReference.cache
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Contract\obj\Debug\Contract.csproj.CoreCompileInputs.cache
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Contract\obj\Debug\Contract.dll
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Contract\obj\Debug\Contract.pdb

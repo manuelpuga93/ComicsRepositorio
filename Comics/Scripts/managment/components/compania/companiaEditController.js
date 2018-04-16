@@ -46,7 +46,7 @@
             }
             else {
                 if (reason.status = 404) {
-                    $scope.comicsInfo = null;
+                    $scope.compania = null;
                     mostrarAlerta('Sin registros', 'No se encontraron registros.', TiposAlerta.ADVERTENCIA);
                 }
                 else {

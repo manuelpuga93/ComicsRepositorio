@@ -6,11 +6,10 @@
 <h2>Compa&ntilde;ias</h2>
 
 <div ng-controller="CompaniasController">
-    <table cellpadding="4" cellspacing="4" width="90%" align="center"
-           style="background-color: skyblue; border:solid 2px red; padding-top:20px;">
+    <table class="table"
+           style="padding-top:20px;">
         <thead>
             <tr style="background-color:#F5F5F5;">
-                <th>ID</th>
                 <th>Nombre</th>
                 <th>Fundada</th>
                 <th></th>
@@ -19,9 +18,8 @@
         </thead>
         <tbody>
             <tr data-ng-repeat="compania in companiasInfo">
-                <td>{{compania.id}}</td>
                 <td>{{compania.nombre}}</td>
-                <td>{{compania.founded}}</td>                
+                <td>{{compania.founded}}</td>
                 <td><a ng-click="EditCompania(compania.id)">Edit</a></td>
                 <td><a ng-click="EliminarCompania(compania.id)">Delete</a></td>
             </tr>

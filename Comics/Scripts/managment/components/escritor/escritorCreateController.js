@@ -1,34 +1,34 @@
 ﻿(function () {
     var app = angular.module("ComicsApp");
 
-    var CompaniaCreateController = function ($scope, CompaniaService, $location, $injector, ShareData) {
+    var EscritorCreateController = function ($scope, EscritorService, $location, $injector, ShareData) {
 
         var init = function () {
-            $scope.titulo = "Crear compa&ntilde;ia";
+            $scope.titulo = "Crear escritor";
         };
 
-        $scope.CrearCompania = function (compania) {
+        $scope.CrearEscritor = function (escritor) {
             
-            if (!compania) {
+            if (!escritor) {
                 mostrarError({ mensaje: "Favor de agregar datos!" });
                 return false;
             }
 
-            let { nombre, founded } = compania;
+            let { nombre, apellido, nacimiento } = escritor;
 
-            if (!nombre || !founded) {
-                if (!nombre) {
-                    mostrarError({ mensaje: "Favor de agregar el nombre!" });
+            if (!nombre || !apellido || !nacimiento) {
+                if (!nombre || apellido) {
+                    mostrarError({ mensaje: "Favor de agregar el nombre y apellido!" });
                     return false;
                 }
-                if (!founded) {
-                    compania["founded"] = 'NA';
+                if (!nacimiento) {
+                    compania["nacimiento"] = 'NA';
                 }
             }
 
-            CompaniaService.CrearCompania(compania).then(function (data) {
-                mostrarAlerta('Operación completada', 'La compa&ntilde;ia se ha creado correctamente.', TiposAlerta.EXITO);
-                $location.path("/showcompanias");
+            EscritorService.CrearEscritor(escritor).then(function (data) {
+                mostrarAlerta('Operación completada', 'El escritor se ha creado correctamente.', TiposAlerta.EXITO);
+                $location.path("/showescritores");
             }, mostrarError);
         };
 
@@ -40,7 +40,7 @@
             }
             else {
                 if (reason.status = 404) {
-                    $scope.compania = null;
+                    $scope.escritor = null;
                     mostrarAlerta('Sin registros', 'No se encontraron registros.', TiposAlerta.ADVERTENCIA);
                 }
                 else {
@@ -52,12 +52,12 @@
         init();
     };
 
-    app.controller("CompaniaCreateController", [
+    app.controller("EscritorCreateController", [
         "$scope",
-        "CompaniaService",
+        "EscritorService",
         "$location",
         "$injector",
         "ShareData",
-        CompaniaCreateController
+        EscritorCreateController
     ]);
 }());

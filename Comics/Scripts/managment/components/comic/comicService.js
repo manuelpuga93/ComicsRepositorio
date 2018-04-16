@@ -26,12 +26,22 @@
             return $http.delete(API_CONFIG.url + '/comics/' + comicId);
         };
 
+        var _obtenerEscritores = function () {
+            return $http.delete(API_CONFIG.url + '/escritores');
+        };
+
+        var _obtenerCompanias = function (companiaId) {
+            return $http.delete(API_CONFIG.url + '/companias');
+        };
+
         return {
             ConsultarComics: _consultarComics,
             ConsultarComicPorId: _consultarComicPorId,
             CrearComic: _crearComic,
             ActualizarComic: _actualizarComic,
-            EliminarComic: _eliminarComic
+            EliminarComic: _eliminarComic,
+            ObtenerEscritores: _obtenerEscritores,
+            ObtenerCompanias: _obtenerCompanias
         };
     }
 

@@ -6,11 +6,10 @@
 <h2>Escritores</h2>
 
 <div ng-controller="EscritoresController">
-    <table cellpadding="4" cellspacing="4" width="90%" align="center"
-           style="background-color: skyblue; border:solid 2px red; padding-top:20px;">
+    <table class="table"
+           style="padding-top:20px;">
         <thead>
             <tr style="background-color:#F5F5F5;">
-                <th>ID</th>
                 <th>Nombre</th>
                 <th>Apellido</th>
                 <th>Nacimiento</th>
@@ -20,11 +19,10 @@
         </thead>
         <tbody>
             <tr data-ng-repeat="escritor in escritoresInfo">
-                <td>{{escritor.id}}</td>
                 <td>{{escritor.nombre}}</td>
                 <td>{{escritor.apellido}}</td>
                 <td>{{escritor.nacimiento}}</td>
-                <td><a ng-click="EditEscritor(escritor.id)">Edit</a></td>
+                <td><a ng-click="CreateEscritor()">Edit</a></td>
                 <td><a ng-click="EliminarEscritor(escritor.id)">Delete</a></td>
             </tr>
         </tbody>

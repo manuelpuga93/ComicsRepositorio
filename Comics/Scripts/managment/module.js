@@ -42,6 +42,16 @@
                 templateUrl: 'Escritor/ShowEscritores',
                 controller: 'EscritoresController'
             });
+        $routeProvider.when('/createescritor',
+            {
+                templateUrl: 'Escritor/CreateEscritor',
+                controller: 'EscritorCreateController'
+            });
+        $routeProvider.when('/editescritor',
+            {
+                templateUrl: 'Escritor/EditEscritor',
+                controller: 'EscritorEditController'
+            });
         $routeProvider.otherwise(
             {
                 redirectTo: '/'

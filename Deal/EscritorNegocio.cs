@@ -25,6 +25,15 @@ namespace Negocios
             return dtoEscritor;
         }
 
+
+        public DtoEscritor ObtenerEscritores()
+        {
+            var escritores = this._escritorRepositorio.List();
+            var totalEscritores = this._escritorRepositorio.ObtenerCantidadEscritores();
+            var dtoEscritor = new DtoEscritor { totalEscritores = totalEscritores, escritores = escritores };
+            return dtoEscritor;
+        }
+
         public Escritor ObtenerEscritorPorId(int escritorId)
         {
             var escritor = this._escritorRepositorio.ObtenerEscritor(escritorId);

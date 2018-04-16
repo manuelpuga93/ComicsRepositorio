@@ -23,7 +23,11 @@
         $scope.EditEscritor = function (escritorId) {
             ShareData.value = escritorId;
             $location.path("/editescritor");
-        }  
+        } 
+
+        $scope.CreateEscritor = function () {
+            $location.path("/createescritor");
+        }
 
 
         $scope.EliminarEscritor = function (escritorId) {

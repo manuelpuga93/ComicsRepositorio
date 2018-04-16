@@ -39,6 +39,7 @@ namespace AccesoDatos.Catalogos
                         query.Parameters.AddWithValue("@Apellido", escritor.apellido);
                         query.Parameters.AddWithValue("@Nacimiento", escritor.nacimiento);
 
+                        query.ExecuteNonQuery();
                         transaction.Complete();
                         resp = true;
 
@@ -118,6 +119,41 @@ namespace AccesoDatos.Catalogos
                     var query = new SqlCommand(queryList, con);
                     query.Parameters.AddWithValue("@skip", skip);
                     query.Parameters.AddWithValue("@take", take);
+                    using (var dr = query.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            var escritor = new Comics.Modelos.Catalogos.Escritor
+                            {
+                                id = Convert.ToInt32(dr["id"]),
+                                nombre = dr["nombre"].ToString(),
+                                apellido = dr["apellido"].ToString(),
+                                nacimiento = dr["nacimiento"].ToString()
+                            };
+
+                            escritores.Add(escritor);
+                        }
+                    }
+
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            return escritores;
+        }
+
+        public List<Comics.Modelos.Catalogos.Escritor> List()
+        {
+            var escritores = new List<Comics.Modelos.Catalogos.Escritor>();
+
+            try
+            {
+                using (SqlConnection con = _Connection())
+                {
+                    var query = new SqlCommand("select * from escritor", con);
+
                     using (var dr = query.ExecuteReader())
                     {
                         while (dr.Read())

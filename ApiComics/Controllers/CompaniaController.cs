@@ -47,6 +47,32 @@ namespace ApiComics.Controllers
         }
 
         [HttpGet]
+        [Route("", Name = "ObtenerCompaniasTotal")]
+        public IHttpActionResult ObtenerCompanias()
+        {
+            try
+            {
+                var companias = this._companiaNegocio.ObtenerCompanias();
+                if (companias.totalCompanias > 0)
+                {
+                    return this.Ok(companias);
+                }
+                else
+                {
+                    return new StatusCodeResult(HttpStatusCode.NotFound, this);
+                }
+            }
+            catch (HttpRequestException)
+            {
+                return BadRequest();
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError();
+            }
+        }
+
+        [HttpGet]
         [Route("{companiaId}", Name = "ObtenerCompaniaPorId")]
         public IHttpActionResult ObtenerCompaniaPorId(int companiaId)
         {

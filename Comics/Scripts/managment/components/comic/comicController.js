@@ -23,8 +23,12 @@
         $scope.EditComic = function (comicId) {
             ShareData.value = comicId;
             $location.path("/editcomic");
-        }  
+        } 
 
+        $scope.CreateComic = function (comicId) {
+            ShareData.value = comicId;
+            $location.path("/createcomic");
+        } 
 
         $scope.EliminarUnidad = function (comicId) {
             ComicService.EliminarUnidad(comicId).then(function (reason) {

@@ -6,11 +6,10 @@
 <h2>Comics</h2>
 
 <div ng-controller="ComicsController">
-    <table cellpadding="4" cellspacing="4" width="90%" align="center"
-           style="background-color: skyblue; border:solid 2px red; padding-top:20px;">
+    <table class="table"
+           style="padding-top:20px;">
         <thead>
             <tr style="background-color:#F5F5F5;">
-                <th>ID</th>
                 <th>Titulo</th>
                 <th>Año</th>
                 <th>Numero</th>
@@ -22,7 +21,6 @@
         </thead>
         <tbody>
             <tr data-ng-repeat="comicVM in comicsInfo">
-                <td>{{comicVM.comic.id}}</td>
                 <td>{{comicVM.comic.titulo}}</td>
                 <td>{{comicVM.comic.anio}}</td>
                 <td>{{comicVM.comic.numero}}</td>

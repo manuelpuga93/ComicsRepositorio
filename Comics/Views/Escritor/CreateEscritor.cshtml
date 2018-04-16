@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.title = "Crear Escritor";
+}
+<h2> Crear Escritor</h2>
+<div ng-controller="EscritorCreateController">
+    <form novalidate class="simple-form">
+        <label>Nombre: <input type="text" ng-model="escritor.nombre" /></label><br />
+        <label>Apellido: <input type="text" ng-model="escritor.apellido" /></label>
+        <label>Nacimiento: <input type="text" ng-model="escritor.nacimiento" /></label>
+        <input type="submit" ng-click="CrearEscritor(escritor)" value="Save" />
+    </form>
+</div>
+
+

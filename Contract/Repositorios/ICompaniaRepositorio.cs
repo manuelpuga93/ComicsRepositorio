@@ -8,6 +8,7 @@ namespace Comics.Contratos.Repositorios
     public interface ICompaniaRepositorio
     {
         List<Compania> List(int skip, int take);
+        List<Compania> List();
         int ObtenerCantidadCompanias();
         int ObtenerUltimoCompania();
         Compania ObtenerCompania(int companiaId);

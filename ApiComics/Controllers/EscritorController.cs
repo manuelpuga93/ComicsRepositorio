@@ -47,6 +47,32 @@ namespace ApiComics.Controllers
         }
 
         [HttpGet]
+        [Route("", Name = "ObtenerEscritoresTotal")]
+        public IHttpActionResult ObtenerEscritores()
+        {
+            try
+            {
+                var escritores = this._escritorNegocio.ObtenerEscritores();
+                if (escritores.totalEscritores > 0)
+                {
+                    return this.Ok(escritores);
+                }
+                else
+                {
+                    return new StatusCodeResult(HttpStatusCode.NotFound, this);
+                }
+            }
+            catch (HttpRequestException)
+            {
+                return BadRequest();
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError();
+            }
+        }
+
+        [HttpGet]
         [Route("{escritorId}", Name = "ObtenerEscritorPorId")]
         public IHttpActionResult ObtenerEscritorPorId(int escritorId)
         {

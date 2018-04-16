@@ -25,6 +25,14 @@ namespace Negocios
             return dtoCompania;
         }
 
+        public DtoCompania ObtenerCompanias()
+        {
+            var companias = this._companiaRepositorio.List();
+            var totalCompanias = this._companiaRepositorio.ObtenerCantidadCompanias();
+            var dtoCompania = new DtoCompania { totalCompanias = totalCompanias, companias = companias };
+            return dtoCompania;
+        }
+
         public Compania ObtenerCompaniaPorId(int companiaId)
         {
             var compania = this._companiaRepositorio.ObtenerCompania(companiaId);

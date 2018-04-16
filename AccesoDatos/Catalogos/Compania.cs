@@ -142,6 +142,40 @@ namespace AccesoDatos.Catalogos
             return companias;
         }
 
+        public List<Comics.Modelos.Catalogos.Compania> List()
+        {
+            var companias = new List<Comics.Modelos.Catalogos.Compania>();
+
+            try
+            {
+                using (SqlConnection con = _Connection())
+                {
+                    var query = new SqlCommand("Select * from compania", con);
+
+                    using (var dr = query.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            var compania = new Comics.Modelos.Catalogos.Compania
+                            {
+                                id = Convert.ToInt32(dr["id"]),
+                                nombre = dr["nombre"].ToString(),
+                                founded = dr["founded"].ToString()
+                            };
+
+                            companias.Add(compania);
+                        }
+                    }
+
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            return companias;
+        }
+
         public int ObtenerCantidadCompanias()
         {
             int totalCompanias = 0;

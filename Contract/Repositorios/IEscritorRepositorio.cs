@@ -8,6 +8,7 @@ namespace Contratos.Repositorios
     public interface IEscritorRepositorio
     {
         List<Escritor> List(int skip, int take);
+        List<Escritor> List();
         int ObtenerCantidadEscritores();
         int ObtenerUltimoEscritor();
         Escritor ObtenerEscritor(int escritorId);

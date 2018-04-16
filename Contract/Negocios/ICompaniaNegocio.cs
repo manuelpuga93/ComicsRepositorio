@@ -9,6 +9,7 @@ namespace Comics.Contratos.Negocios
     public interface ICompaniaNegocio
     {
         DtoCompania ObtenerCompanias(int skip, int take);
+        DtoCompania ObtenerCompanias();
         Compania ObtenerCompaniaPorId(int companiaId);
         int CrearCompania(Compania compania);
         int ActualizarCompania(Compania compania);

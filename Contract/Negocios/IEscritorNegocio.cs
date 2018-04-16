@@ -9,6 +9,7 @@ namespace Comics.Contratos.Negocios
     public interface IEscritorNegocio
     {
         DtoEscritor ObtenerEscritores(int skip, int take);
+        DtoEscritor ObtenerEscritores();
         Escritor ObtenerEscritorPorId(int escritorId);
         int CrearEscritor(Escritor escritor);
         int ActualizarEscritor(Escritor escritor);

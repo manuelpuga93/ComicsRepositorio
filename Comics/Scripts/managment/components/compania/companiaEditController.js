@@ -14,13 +14,44 @@
                 $scope.compania = data;
             });
         };
+
+        $scope.EditarCompania = function (compania) {            
+            if (!compania) {
+                mostrarError({ mensaje: "Favor de agregar datos!" });
+                return false;
+            }
+
+            let { nombre, founded } = compania;
+
+            if (!nombre || !founded) {
+                if (!nombre) {
+                    mostrarError({ mensaje: "Favor de agregar el nombre!" });
+                    return false;
+                }
+                if (!founded) {
+                    compania["founded"] = 'NA';
+                }
+            }
+            CompaniaService.ActualizarCompania(compania).then(function (data) {
+                mostrarAlerta('Operación completada', 'Los datos de la compania han sido correctamente actualizados.', TiposAlerta.EXITO);
+                $location.path("/showcompanias");
+            }, mostrarError);
+        };
         
         var mostrarError = function (reason) {
+            let mensaje = (reason.mensaje) ? mensaje : 'Ha ocurrido un error inesperado.';
+
             if (reason.data) {
                 mostrarAlerta('Error', 'Ha ocurrido un error inesperado.', TiposAlerta.ERROR);
             }
             else {
-                mostrarAlerta('Error', 'Ha ocurrido un error inesperado.', TiposAlerta.ERROR);
+                if (reason.status = 404) {
+                    $scope.comicsInfo = null;
+                    mostrarAlerta('Sin registros', 'No se encontraron registros.', TiposAlerta.ADVERTENCIA);
+                }
+                else {
+                    mostrarAlerta('Error', mensaje, TiposAlerta.ERROR);
+                }
             }
         };
 

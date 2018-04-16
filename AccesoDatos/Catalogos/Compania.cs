@@ -39,6 +39,7 @@ namespace AccesoDatos.Catalogos
                         query.Parameters.AddWithValue("@Nombre", compania.nombre);
                         query.Parameters.AddWithValue("@Founded", compania.founded);
 
+                        query.ExecuteNonQuery();
                         transaction.Complete();
                         resp = true;
 

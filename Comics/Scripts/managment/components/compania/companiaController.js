@@ -41,6 +41,8 @@
         };
 
         var mostrarError = function (reason) {
+            let mensaje = (reason.mensaje) ? mensaje : 'Ha ocurrido un error inesperado.';
+
             if (reason.data) {
                 mostrarAlerta('Error', 'Ha ocurrido un error inesperado.', TiposAlerta.ERROR);
             }
@@ -50,7 +52,7 @@
                     mostrarAlerta('Sin registros', 'No se encontraron registros.', TiposAlerta.ADVERTENCIA);
                 }
                 else {
-                    mostrarAlerta('Error', 'Ha ocurrido un error inesperado.', TiposAlerta.ERROR);
+                    mostrarAlerta('Error', mensaje, TiposAlerta.ERROR);
                 }
             }
         };

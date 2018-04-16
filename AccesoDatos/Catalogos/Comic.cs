@@ -37,7 +37,7 @@ namespace AccesoDatos.Catalogos
                         query.Parameters.AddWithValue("@Numero", comic.numero);
                         query.Parameters.AddWithValue("@EscritorId", comic.escritor);
                         query.Parameters.AddWithValue("@CompaniaId", comic.compania);
-
+                        query.ExecuteNonQuery();
                         transaction.Complete();
                         resp = true;
 

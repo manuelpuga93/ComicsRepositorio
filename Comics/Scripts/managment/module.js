@@ -22,6 +22,16 @@
                 templateUrl: 'Comic/EditComic',
                 controller: 'ComicEditController'
             });
+        $routeProvider.when('/showcompanias',
+            {
+                templateUrl: 'Compania/ShowCompanias',
+                controller: 'CompaniasController'
+            });
+        $routeProvider.when('/showescritores',
+            {
+                templateUrl: 'Escritor/ShowEscritores',
+                controller: 'EscritoresController'
+            });
         $routeProvider.otherwise(
             {
                 redirectTo: '/'

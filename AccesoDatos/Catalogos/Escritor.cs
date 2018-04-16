@@ -32,7 +32,8 @@ namespace AccesoDatos.Catalogos
                 {
                     using (SqlConnection con = _Connection())
                     {
-                        var query = new SqlCommand("exec Escritor_IU", con);
+                        var query = new SqlCommand("Escritor_IU", con);
+                        query.CommandType = System.Data.CommandType.StoredProcedure;
                         query.Parameters.AddWithValue("@EscritorId", escritor.id);
                         query.Parameters.AddWithValue("@Nombre", escritor.nombre);
                         query.Parameters.AddWithValue("@Apellido", escritor.apellido);
@@ -62,10 +63,12 @@ namespace AccesoDatos.Catalogos
                 {
                     using (SqlConnection con = _Connection())
                     {
-                        var query = new SqlCommand("exec Escritor_IU ", con);
+                        var query = new SqlCommand("Escritor_IU ", con);
+                        query.CommandType = System.Data.CommandType.StoredProcedure;
                         query.Parameters.AddWithValue("@EscritorId", escritor.id);
                         query.Parameters.AddWithValue("@Nombre", escritor.nombre);
                         query.Parameters.AddWithValue("@Apellido", escritor.apellido);
+                        query.Parameters.AddWithValue("@Nacimiento", escritor.nacimiento);
 
                         id = (int)query.ExecuteScalar();
 
@@ -123,7 +126,8 @@ namespace AccesoDatos.Catalogos
                             {
                                 id = Convert.ToInt32(dr["id"]),
                                 nombre = dr["nombre"].ToString(),
-                                apellido = dr["apellido"].ToString()
+                                apellido = dr["apellido"].ToString(),
+                                nacimiento = dr["nacimiento"].ToString()
                             };
 
                             escritores.Add(escritor);
@@ -167,7 +171,8 @@ namespace AccesoDatos.Catalogos
             {
                 using (SqlConnection con = _Connection())
                 {
-                    var query = new SqlCommand("exec Escritor_Obtener", con);
+                    var query = new SqlCommand("Escritor_Obtener", con);
+                    query.CommandType = System.Data.CommandType.StoredProcedure;
                     query.Parameters.AddWithValue("@EscritorId", escritorId);
 
                     using (var dr = query.ExecuteReader())

@@ -246,6 +246,8 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ComicController.cs" />
+    <Compile Include="Controllers\CompaniaController.cs" />
+    <Compile Include="Controllers\EscritorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MeController.cs" />
@@ -1078,6 +1080,12 @@
     <Content Include="Scripts\managment\components\comic\comicCreateController.js" />
     <Content Include="Scripts\managment\components\comic\comicEditController.js" />
     <Content Include="Scripts\managment\components\comic\comicService.js" />
+    <Content Include="Scripts\managment\components\compania\companiaController.js" />
+    <Content Include="Scripts\managment\components\compania\comicCreateController.js" />
+    <Content Include="Scripts\managment\components\compania\comicEditController.js" />
+    <Content Include="Scripts\managment\components\compania\companiaService.js" />
+    <Content Include="Scripts\managment\components\escritor\escritorController.js" />
+    <Content Include="Scripts\managment\components\escritor\escritorService.js" />
     <Content Include="Scripts\managment\module.js" />
     <Content Include="Scripts\managment\shared\alerts\alertGlobal.js" />
     <Content Include="Scripts\managment\shared\alerts\bootstrapAlertTemplate.html" />
@@ -1127,6 +1135,8 @@
     <Content Include="Views\Comic\CreateComic.cshtml" />
     <Content Include="Views\Comic\ShowComics.cshtml" />
     <Content Include="Views\Comic\EditComic.cshtml" />
+    <Content Include="Views\Compania\ShowCompanias.cshtml" />
+    <Content Include="Views\Escritor\ShowEscritores.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

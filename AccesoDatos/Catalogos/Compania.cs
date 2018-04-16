@@ -33,7 +33,8 @@ namespace AccesoDatos.Catalogos
                 {
                     using (SqlConnection con = _Connection())
                     {
-                        var query = new SqlCommand("exec Compania_IU", con);
+                        var query = new SqlCommand("Compania_IU", con);
+                        query.CommandType = System.Data.CommandType.StoredProcedure;
                         query.Parameters.AddWithValue("@CompaniaId", compania.id);
                         query.Parameters.AddWithValue("@Nombre", compania.nombre);
                         query.Parameters.AddWithValue("@Founded", compania.founded);
@@ -62,7 +63,8 @@ namespace AccesoDatos.Catalogos
                 {
                     using (SqlConnection con = _Connection())
                     {
-                        var query = new SqlCommand("exec Compania_IU ", con);
+                        var query = new SqlCommand("Compania_IU ", con);
+                        query.CommandType = System.Data.CommandType.StoredProcedure;
                         query.Parameters.AddWithValue("@CompaniaId", compania.id);
                         query.Parameters.AddWithValue("@Nombre", compania.nombre);
                         query.Parameters.AddWithValue("@founded", compania.founded);
@@ -167,7 +169,8 @@ namespace AccesoDatos.Catalogos
             {
                 using (SqlConnection con = _Connection())
                 {
-                    var query = new SqlCommand("exec Compania_Obtener", con);
+                    var query = new SqlCommand("Compania_Obtener", con);
+                    query.CommandType = System.Data.CommandType.StoredProcedure;
                     query.Parameters.AddWithValue("@CompaniaId", companiaId);
 
                     using (var dr = query.ExecuteReader())

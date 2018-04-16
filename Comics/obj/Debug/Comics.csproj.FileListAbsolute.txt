@@ -465,3 +465,4 @@ C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Comics\bin\es\S
 C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Comics\obj\Debug\Comics.csproj.CoreCompileInputs.cache
 C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Comics\obj\Debug\Comics.dll
 C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Comics\obj\Debug\Comics.pdb
+C:\Users\Manue\OneDrive\Documentos\Repositorio\ComicsRepositorio\Comics\obj\Debug\Comics.csprojResolveAssemblyReference.cache

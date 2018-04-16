@@ -14,13 +14,7 @@ namespace AccesoDatos.Catalogos
     public class Comic : Conexion, IComicRepositorio
     {
         #region PRIVATE STRING QUERIES
-
-        private string queryList = @"SELECT * FROM comics tb
-            Inner JOIN escritor e on tb.escritor = e.id
-	        inner join compania c on tb.compania = c.id
-            ORDER BY tb.id
-            OFFSET @skip ROWS
-            FETCH NEXT @take ROWS ONLY";
+        
         private string queryCantidadComics = "SELECT COUNT(*) FROM comics";
         private string queryDeleteComic = "DELETE FROM comics WHERE id = @id";
 

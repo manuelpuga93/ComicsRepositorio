@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.title = "Editar Compa&ntilde;ia";
+}
+<h2> Editar Compa&ntilde;ia</h2>
+<div ng-controller="CompaniaEditController">
+    <form novalidate class="simple-form">
+        <label>Nombre: <input type="text" ng-model="compania.nombre" /></label><br />
+        <label>Fundada: <input type="text" ng-model="compania.founded" /></label>
+        <input type="submit" ng-click="CrearCompania(compania)" value="Save" />
+    </form>
+</div>

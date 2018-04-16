@@ -20,14 +20,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Nombre de aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Prueba Comics", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "HelpPage" }, null)</li>
+                    <li><a href="showcomics"> Comics </a></li>
+                    <li><a href="showcompanias"> Compa&ntilde;ias </a></li>
+                    <li><a href="showescritores"> Escritores </a></li>
                 </ul>
-                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
@@ -54,6 +54,8 @@
     <script src="~/Scripts/managment/components/comic/comicService.js"></script>
     <script src="~/Scripts/managment/components/compania/companiaController.js"></script>
     <script src="~/Scripts/managment/components/compania/companiaService.js"></script>
+    <script src="~/Scripts/managment/components/compania/companiaCreateController.js"></script>
+    <script src="~/Scripts/managment/components/compania/companiaEditController.js"></script>
     <script src="~/Scripts/managment/components/escritor/escritorController.js"></script>
     <script src="~/Scripts/managment/components/escritor/escritorService.js"></script>
 </body>

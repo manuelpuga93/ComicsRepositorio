@@ -1081,8 +1081,8 @@
     <Content Include="Scripts\managment\components\comic\comicEditController.js" />
     <Content Include="Scripts\managment\components\comic\comicService.js" />
     <Content Include="Scripts\managment\components\compania\companiaController.js" />
-    <Content Include="Scripts\managment\components\compania\comicCreateController.js" />
-    <Content Include="Scripts\managment\components\compania\comicEditController.js" />
+    <Content Include="Scripts\managment\components\compania\companiaCreateController.js" />
+    <Content Include="Scripts\managment\components\compania\companiaEditController.js" />
     <Content Include="Scripts\managment\components\compania\companiaService.js" />
     <Content Include="Scripts\managment\components\escritor\escritorController.js" />
     <Content Include="Scripts\managment\components\escritor\escritorService.js" />
@@ -1137,6 +1137,8 @@
     <Content Include="Views\Comic\EditComic.cshtml" />
     <Content Include="Views\Compania\ShowCompanias.cshtml" />
     <Content Include="Views\Escritor\ShowEscritores.cshtml" />
+    <Content Include="Views\Compania\CreateCompania.cshtml" />
+    <Content Include="Views\Compania\EditCompania.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

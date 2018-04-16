@@ -1,16 +1,20 @@
 ﻿(function () {
     var app = angular.module("ComicsApp");
 
-    var ComicEditController = function ($scope, ComicService, $location, $injector, ShareData) {
+    var CompaniaEditController = function ($scope, CompaniaService, $location, $injector, ShareData) {
 
         var init = function () {
-            ComicService.ConsultarComicPorId(ShareData.value).then(function (data) {
-                    $scope.comic = data;
-            });
-            $scope.titulo = "Editar comic";
+            $scope.EditCompania(ShareData.value);
+            $scope.titulo = "Editar compania";
             
         };
-    
+
+        $scope.EditCompania = function (companiaId) {
+            CompaniaService.ConsultarCompaniaPorId(companiaId).then(function (data) {
+                $scope.compania = data;
+            });
+        };
+        
         var mostrarError = function (reason) {
             if (reason.data) {
                 mostrarAlerta('Error', 'Ha ocurrido un error inesperado.', TiposAlerta.ERROR);
@@ -23,12 +27,12 @@
         init();
     };
 
-    app.controller("ComicEditController", [
+    app.controller("CompaniaEditController", [
         "$scope",
-        "ComicService",
+        "CompaniaService",
         "$location",
         "$injector",
         "ShareData",
-        ComicEditController
+        CompaniaEditController
     ]);
 }());

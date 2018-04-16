@@ -27,6 +27,16 @@
                 templateUrl: 'Compania/ShowCompanias',
                 controller: 'CompaniasController'
             });
+        $routeProvider.when('/createcompania',
+            {
+                templateUrl: 'Compania/CreateCompania',
+                controller: 'CompaniaCreateController'
+            });
+        $routeProvider.when('/editcompania',
+            {
+                templateUrl: 'Compania/EditCompania',
+                controller: 'CompaniaEditController'
+            });
         $routeProvider.when('/showescritores',
             {
                 templateUrl: 'Escritor/ShowEscritores',

@@ -23,8 +23,11 @@
         $scope.EditCompania = function (companiaId) {
             ShareData.value = companiaId;
             $location.path("/editcompania");
-        }  
+        }
 
+        $scope.CreateCompania = function () {
+            $location.path("/createcompania");
+        }
 
         $scope.EliminarCompania = function (companiaId) {
             CompaniaService.EliminarCompania(companiaId).then(function (reason) {

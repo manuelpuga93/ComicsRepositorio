@@ -38,7 +38,7 @@
         };
 
         $scope.pageChanged = function () {
-            $scope.ConsultarCompanias(($scope.pagination.currentPage - 1) * 5, $scope.pagination.itemsPerPage);
+            $scope.ConsultarEscritores(($scope.pagination.currentPage - 1) * 5, $scope.pagination.itemsPerPage);
         };
 
         var mostrarError = function (reason) {

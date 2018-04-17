@@ -1,5 +1,5 @@
 ﻿(function () {
-    var app = angular.module("ComicsApp", ['ngRoute']);
+    var app = angular.module("ComicsApp", ['ui.bootstrap','ngRoute']);
 
     app.factory("ShareData", function () {
         return { value: 0 }

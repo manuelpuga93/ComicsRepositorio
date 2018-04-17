@@ -1091,6 +1091,7 @@
     <Content Include="Scripts\managment\module.js" />
     <Content Include="Scripts\managment\shared\alerts\alertGlobal.js" />
     <Content Include="Scripts\managment\shared\alerts\bootstrapAlertTemplate.html" />
+    <Content Include="Scripts\managment\shared\pagination\pagination.html" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -1133,7 +1134,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Shared\pagination.cshtml" />
+    <None Include="Views\Shared\pagination.cshtml" />
     <Content Include="Views\Comic\ShowComics.cshtml" />
     <Content Include="Views\Compania\ShowCompanias.cshtml" />
     <Content Include="Views\Escritor\ShowEscritores.cshtml" />

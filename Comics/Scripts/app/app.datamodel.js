@@ -1,4 +1,4 @@
-﻿function AppDataModel() {
+﻿ function AppDataModel() {
     var self = this;
     // Routes
     self.userInfoUrl = "/api/Me";

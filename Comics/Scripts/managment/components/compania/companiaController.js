@@ -6,7 +6,8 @@
             $scope.pagination = {
                 totalItems: 0,
                 currentPage: 1,
-                itemsPerPage: 5
+                itemsPerPage: 5,
+                maxsize: 21
             }
 
             $scope.ConsultarCompanias(($scope.pagination.currentPage - 1) * 5, $scope.pagination.itemsPerPage);

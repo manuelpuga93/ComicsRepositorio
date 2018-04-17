@@ -1077,9 +1077,9 @@
     <Content Include="Scripts\knockout.validation.debug.js" />
     <Content Include="Scripts\knockout.validation.js" />
     <Content Include="Scripts\managment\components\comic\comicController.js" />
-    <Content Include="Scripts\managment\components\comic\comicCreateController.js" />
     <Content Include="Scripts\managment\components\comic\comicEditController.js" />
     <Content Include="Scripts\managment\components\comic\comicService.js" />
+    <Content Include="Scripts\managment\components\comic\comicsCreateController.js" />
     <Content Include="Scripts\managment\components\compania\companiaController.js" />
     <Content Include="Scripts\managment\components\compania\companiaCreateController.js" />
     <Content Include="Scripts\managment\components\compania\companiaEditController.js" />
@@ -1134,15 +1134,15 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Shared\pagination.cshtml" />
-    <Content Include="Views\Comic\CreateComic.cshtml" />
     <Content Include="Views\Comic\ShowComics.cshtml" />
-    <Content Include="Views\Comic\EditComic.cshtml" />
     <Content Include="Views\Compania\ShowCompanias.cshtml" />
     <Content Include="Views\Escritor\ShowEscritores.cshtml" />
     <Content Include="Views\Compania\CreateCompania.cshtml" />
     <Content Include="Views\Compania\EditCompania.cshtml" />
     <Content Include="Views\Escritor\CreateEscritor.cshtml" />
     <Content Include="Views\Escritor\EditEscritor.cshtml" />
+    <Content Include="Views\Comic\CreateComic.cshtml" />
+    <Content Include="Views\Comic\EditComic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

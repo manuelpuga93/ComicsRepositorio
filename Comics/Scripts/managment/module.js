@@ -15,9 +15,9 @@
         $routeProvider.when('/createcomic',
             {
                 templateUrl: 'Comic/CreateComic',
-                controller: 'ComicCreateController'
+                controller: 'ComicsCreateController'
             });
-        $routeProvider.when("/editcomic",
+        $routeProvider.when('/editcomic',
             {
                 templateUrl: 'Comic/EditComic',
                 controller: 'ComicEditController'

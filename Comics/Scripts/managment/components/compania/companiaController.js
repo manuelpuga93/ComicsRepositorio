@@ -18,8 +18,7 @@
                 $scope.pagination.totalItems = data.totalCompanias
             }, mostrarError);
         };
-
-        //To Edit Student Information  
+        
         $scope.EditCompania = function (companiaId) {
             ShareData.value = companiaId;
             $location.path("/editcompania");

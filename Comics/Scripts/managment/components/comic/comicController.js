@@ -18,21 +18,19 @@
                 $scope.pagination.totalItems = data.totalComics
             }, mostrarError);
         };
-
-        //To Edit Student Information  
+ 
         $scope.EditComic = function (comicId) {
             ShareData.value = comicId;
             $location.path("/editcomic");
-        } 
-
-        $scope.CreateComic = function (comicId) {
-            ShareData.value = comicId;
+        }
+        
+        $scope.CreateComic = function () {
             $location.path("/createcomic");
-        } 
+        };
 
-        $scope.EliminarUnidad = function (comicId) {
-            ComicService.EliminarUnidad(comicId).then(function (reason) {
-                mostrarAlerta('Operación completada', 'Los datos de la comic han sido correctamente eliminados.', TiposAlerta.EXITO);
+        $scope.EliminarComic = function (comicId) {
+            ComicService.EliminarComic(comicId).then(function (reason) {
+                mostrarAlerta('Operación completada', 'Los datos del comic han sido correctamente eliminados.', TiposAlerta.EXITO);
                 $scope.ConsultarComics(($scope.pagination.currentPage - 1) * 5, $scope.pagination.itemsPerPage);
             }, mostrarError);
         };

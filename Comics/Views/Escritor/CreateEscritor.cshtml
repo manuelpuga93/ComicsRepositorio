@@ -4,10 +4,10 @@
 <h2> Crear Escritor</h2>
 <div ng-controller="EscritorCreateController">
     <form novalidate class="simple-form">
-        <label>Nombre: <input type="text" ng-model="escritor.nombre" /></label><br />
-        <label>Apellido: <input type="text" ng-model="escritor.apellido" /></label>
-        <label>Nacimiento: <input type="text" ng-model="escritor.nacimiento" /></label>
-        <input type="submit" ng-click="CrearEscritor(escritor)" value="Save" />
+        <div class="form-group"><label>Nombre: <input class="form-control" type="text" ng-model="escritor.nombre" /></label></div>
+        <div class="form-group"><label>Apellido: <input class="form-control" type="text" ng-model="escritor.apellido" /></label></div>
+        <div class="form-group"><label>Nacimiento: <input class="form-control" type="text" ng-model="escritor.nacimiento" /></label></div>
+        <input class="btn btn-primary" type="submit" ng-click="CrearEscritor(escritor)" value="Guardar" />
     </form>
 </div>
 

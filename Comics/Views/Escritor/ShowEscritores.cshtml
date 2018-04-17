@@ -6,6 +6,7 @@
 <h2>Escritores</h2>
 
 <div ng-controller="EscritoresController">
+    <button ng-click="CreateEscritor()" style="float:right;" class="btn btn-primary">Crear escritor</button>
     <table class="table"
            style="padding-top:20px;">
         <thead>
@@ -22,8 +23,8 @@
                 <td>{{escritor.nombre}}</td>
                 <td>{{escritor.apellido}}</td>
                 <td>{{escritor.nacimiento}}</td>
-                <td><a ng-click="CreateEscritor()">Edit</a></td>
-                <td><a ng-click="EliminarEscritor(escritor.id)">Delete</a></td>
+                <td><a ng-click="EditEscritor(escritor.id)">Editar</a></td>
+                <td><a ng-click="EliminarEscritor(escritor.id)">Eliminar</a></td>
             </tr>
         </tbody>
     </table>

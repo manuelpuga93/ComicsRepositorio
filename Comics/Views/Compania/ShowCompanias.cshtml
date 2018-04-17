@@ -6,6 +6,7 @@
 <h2>Compa&ntilde;ias</h2>
 
 <div ng-controller="CompaniasController">
+    <button ng-click="CreateCompania()" style="float:right;" class="btn btn-primary">Crear compa&ntilde;ia</button>
     <table class="table"
            style="padding-top:20px;">
         <thead>
@@ -20,8 +21,8 @@
             <tr data-ng-repeat="compania in companiasInfo">
                 <td>{{compania.nombre}}</td>
                 <td>{{compania.founded}}</td>
-                <td><a ng-click="EditCompania(compania.id)">Edit</a></td>
-                <td><a ng-click="EliminarCompania(compania.id)">Delete</a></td>
+                <td><a ng-click="EditCompania(compania.id)">Editar</a></td>
+                <td><a ng-click="EliminarCompania(compania.id)">Eliminar</a></td>
             </tr>
         </tbody>
     </table>

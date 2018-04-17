@@ -20,12 +20,33 @@
         };
  
         $scope.EditComic = function (comicId) {
-            ShareData.value = comicId;
-            $location.path("/editcomic");
+            var datos = {};
+            ComicService.ObtenerEscritores().then(function (data) {
+                datos.escritores = data;
+
+                ComicService.ObtenerCompanias().then(function (data) {
+                    datos.companias = data;
+                    datos.comicId = comicId;
+                    ShareData.value = datos;
+                    $location.path("/editcomic");
+                });
+            });
+            
         }
         
         $scope.CreateComic = function () {
-            $location.path("/createcomic");
+            var datos = {};
+            ComicService.ObtenerEscritores().then(function (data) {
+                datos.escritores = data;
+
+                ComicService.ObtenerCompanias().then(function (data) {
+                    datos.companias = data;
+                    ShareData.value = datos;
+                    $location.path("/createcomic");
+                });
+            });
+            
+            
         };
 
         $scope.EliminarComic = function (comicId) {

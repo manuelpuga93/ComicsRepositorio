@@ -6,6 +6,7 @@
 <h2>Comics</h2>
 
 <div ng-controller="ComicsController">
+    <button ng-click="CreateComic()" style="float:right;" class="btn btn-primary">Crear comic</button>
     <table class="table"
            style="padding-top:20px;">
         <thead>
@@ -26,8 +27,8 @@
                 <td>{{comicVM.comic.numero}}</td>
                 <td>{{comicVM.escritorNombre}}</td>
                 <td>{{comicVM.companiaNombre}}</td>
-                <td><a ng-click="CreateComic()">Edit</a></td>
-                <td><a ng-click="EliminarComic(comicVM.comic.id)">Delete</a></td>
+                <td><a ng-click="EditComic(comicVM.comic.id)">Editar</a></td>
+                <td><a ng-click="EliminarComic(comicVM.comic.id)">Eliminar</a></td>
             </tr>
         </tbody>
     </table>

@@ -27,11 +27,11 @@
         };
 
         var _obtenerEscritores = function () {
-            return $http.delete(API_CONFIG.url + '/escritores');
+            return $http.get(API_CONFIG.url + '/escritores');
         };
 
         var _obtenerCompanias = function (companiaId) {
-            return $http.delete(API_CONFIG.url + '/companias');
+            return $http.get(API_CONFIG.url + '/companias');
         };
 
         return {

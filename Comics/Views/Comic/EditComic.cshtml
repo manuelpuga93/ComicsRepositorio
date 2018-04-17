@@ -3,7 +3,30 @@
 }
 <h2> Editar Comic</h2>
 <div ng-controller="ComicEditController">
-    <form novalidate class="simple-form">
+    <form novalidate>
+        <div class="form-group">
+            <label>Titulo: <input type="text" class="form-control" ng-model="comic.titulo" /></label><br />
+        </div>
+        <div class="form-group">
+            <label>A&ntilde;o: <input type="number" class="form-control" ng-model="comic.anio" /></label>
+        </div>
+        <div class="form-group">
+            <label>N&uacute;mero: <input type="number" class="form-control" ng-model="comic.numero" /></label>
+        </div>
+
+        <div class="form-group">
+            <label>Escritor: </label>
+            <code>
+                <select class="form-control" ng-model="comic.escritor" ng-options="escritor.id as escritor.nombre for escritor in escritores"></select>
+            </code>
+        </div>
+        <div class="form-group">
+            <label>Compa&ntilde;ia: </label>
+            <code>
+                <select class="form-control" ng-model="comic.compania" ng-options="compania.id as compania.nombre for compania in companias"></select>
+            </code>
+        </div>
+        <input class="btn btn-primary" type="submit" ng-click="EditComic(comic)" value="Guardar" />
     </form>
 </div>
 
